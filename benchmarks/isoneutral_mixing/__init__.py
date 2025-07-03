@@ -77,10 +77,7 @@ def get_callable(backend, size, device="cpu"):
 
 
 __implementations__ = (
-    "aesara",
     "cupy",
-    "numba",
-    "numpy",
     "jax",
     "pytorch",
     "taichi",

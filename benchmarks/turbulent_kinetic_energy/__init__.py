@@ -77,7 +77,5 @@ def get_callable(backend, size, device="cpu"):
 
 __implementations__ = (
     "jax",
-    "numba",
-    "numpy",
     "pytorch",
 )
