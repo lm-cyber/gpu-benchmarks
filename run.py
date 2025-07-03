@@ -54,7 +54,7 @@ DEFAULT_SIZE = tuple(2 ** i for i in range(12, 23, 2))
     "-r",
     "--repetitions",
     required=False,
-    default=None,
+    default=100,
     type=click.INT,
     help="Fixed number of iterations to run for each size and backend [default: auto-detect]",
 )
@@ -74,7 +74,7 @@ DEFAULT_SIZE = tuple(2 ** i for i in range(12, 23, 2))
     show_default=True,
     help="Run benchmarks on given device where supported by the backend",
 )
-def main(benchmark, size=None, backend=None, repetitions=None, burnin=1, device="cpu"):
+def main(benchmark, size=None, backend=None, repetitions=None, burnin=1, device="gpu"):
     """HPC benchmarks for Python
 
     Usage:

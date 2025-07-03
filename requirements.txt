@@ -1,0 +1,5 @@
+cupy-cuda12x
+click
+taichi
+torch
+jax[cuda]
